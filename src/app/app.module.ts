@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule} from "@angular/material/slider";
 import { MatTableModule } from "@angular/material/table";
 
+import {HttpClientModule} from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,7 @@ import { MatTableModule } from "@angular/material/table";
     AdminComponent
   ],
   imports: [
+    HttpClientModule,
     MatTableModule,
     MatSliderModule,
     BrowserModule,

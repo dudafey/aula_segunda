@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CadastroService } from 'src/models/cadastro.service';
 import { Produtos } from '../produto';
+import { Produto } from 'src/models/produto.model';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +11,14 @@ import { Produtos } from '../produto';
 export class HomeComponent implements OnInit {
 
   produtos = Produtos;
-  constructor() { }
+  constructor(private service: CadastroService) { }
 
   ngOnInit(): void {
+
+    this.service.listar().subscribe(produto =>{ 
+      console.log(produto);
+
+    });
   }
 
 }
