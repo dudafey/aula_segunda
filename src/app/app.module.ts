@@ -14,6 +14,11 @@ import { MatSliderModule} from "@angular/material/slider";
 import { MatTableModule } from "@angular/material/table";
 
 import {HttpClientModule} from "@angular/common/http";
+import { IncluirComponent } from './cadastros/produtos/incluir/incluir.component';
+import { EditarComponent } from './cadastros/produtos/editar/editar.component';
+import { ExcluirComponent } from './cadastros/produtos/excluir/excluir.component';
+import { ListarComponent } from './cadastros/produtos/listar/listar.component';
+import { CadastrosComponent } from './cadastros/cadastros/cadastros.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import {HttpClientModule} from "@angular/common/http";
     NavComponent,
     HomeComponent,
     SobreComponent,
-    AdminComponent
+    AdminComponent,
+    IncluirComponent,
+    EditarComponent,
+    ExcluirComponent,
+    ListarComponent,
+    CadastrosComponent
   ],
   imports: [
     HttpClientModule,

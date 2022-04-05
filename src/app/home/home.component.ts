@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CadastroService } from 'src/models/cadastro.service';
+
 import { Produtos } from '../produto';
 import { Produto } from 'src/models/produto.model';
 
@@ -11,14 +11,11 @@ import { Produto } from 'src/models/produto.model';
 export class HomeComponent implements OnInit {
 
   produtos = Produtos;
-  constructor(private service: CadastroService) { }
+
+  constructor() { }
 
   ngOnInit(): void {
-
-    this.service.listar().subscribe(produto =>{ 
-      console.log(produto);
-
-    });
   }
+  
 
 }
